@@ -4,7 +4,7 @@ export default function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/dashboard")
+    fetch("https://portal-backend-g903.onrender.com/api/dashboard")
       .then(res => res.json())
       .then(setData);
   }, []);
@@ -26,3 +26,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
