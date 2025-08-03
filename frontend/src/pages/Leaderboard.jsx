@@ -4,7 +4,7 @@ export default function Leaderboard() {
   const [leaders, setLeaders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/leaderboard")
+    fetch("https://portal-backend-g903.onrender.com/api/leaderboard")
       .then(res => res.json())
       .then(setLeaders);
   }, []);
@@ -31,3 +31,4 @@ export default function Leaderboard() {
     </div>
   );
 }
+
